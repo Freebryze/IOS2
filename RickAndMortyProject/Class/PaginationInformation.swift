@@ -14,15 +14,7 @@ struct PaginationInformation {
     let previousURL: URL?
 }
 
-/*
- {
-     "count": 671,
-     "pages": 34,
-     "next": "https://rickandmortyapi.com/api/character?page=2",
-     "prev": null
- }
- */
-extension PaginatinInformation: Decodable {
+extension PaginationInformation: Decodable {
     enum CodingKeys: String, CodingKey {
         case count
         case pages
