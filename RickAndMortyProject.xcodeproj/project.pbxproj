@@ -13,6 +13,7 @@
 		08FCF00F25E6968D003CC332 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FCF00D25E6968D003CC332 /* Main.storyboard */; };
 		08FCF01125E6968F003CC332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08FCF01025E6968F003CC332 /* Assets.xcassets */; };
 		08FCF01425E6968F003CC332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FCF01225E6968F003CC332 /* LaunchScreen.storyboard */; };
+		08FCF01D25E69BCB003CC332 /* Class in Resources */ = {isa = PBXBuildFile; fileRef = 08FCF01C25E69BCB003CC332 /* Class */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		08FCF01025E6968F003CC332 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08FCF01325E6968F003CC332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08FCF01525E6968F003CC332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08FCF01C25E69BCB003CC332 /* Class */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Class; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				08FCF00925E6968D003CC332 /* SceneDelegate.swift */,
 				08FCF00B25E6968D003CC332 /* ViewController.swift */,
 				08FCF00D25E6968D003CC332 /* Main.storyboard */,
+				08FCF01C25E69BCB003CC332 /* Class */,
 				08FCF01025E6968F003CC332 /* Assets.xcassets */,
 				08FCF01225E6968F003CC332 /* LaunchScreen.storyboard */,
 				08FCF01525E6968F003CC332 /* Info.plist */,
@@ -127,6 +130,7 @@
 				08FCF01425E6968F003CC332 /* LaunchScreen.storyboard in Resources */,
 				08FCF01125E6968F003CC332 /* Assets.xcassets in Resources */,
 				08FCF00F25E6968D003CC332 /* Main.storyboard in Resources */,
+				08FCF01D25E69BCB003CC332 /* Class in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
