@@ -12,6 +12,7 @@ struct SerieCharacter: Hashable {
     let name: String
     let imageURL: URL
     let createdDate: Date
+    let species: String
 }
 
 extension SerieCharacter: Decodable {
@@ -20,5 +21,6 @@ extension SerieCharacter: Decodable {
         case name = "name"
         case imageURL = "image"
         case createdDate = "created"
+        case species = "species"
     }
 }

@@ -32,10 +32,8 @@ class CollectionViewController: UICollectionViewController {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CharacterCollectionViewCell
                 
                 cell.characterName.text = serieCharacter.name
-                //cell.characterImage.loadImage(from: serieCharacter.imageURL) {cell.setNeedsLayout()}
-                cell.characterDescription.text = DateFormatter.localizedString(from: serieCharacter.createdDate,
-                                                                           dateStyle: .medium,
-                                                                           timeStyle: .short)
+                cell.characterImage.loadImage(from: serieCharacter.imageURL) {cell.setNeedsLayout()}
+                cell.characterDescription.text = serieCharacter.species
                 return cell
 
             }
@@ -70,16 +68,15 @@ class CollectionViewController: UICollectionViewController {
             switch currentSection {
             case .main:
                 let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                                      heightDimension: .fractionalHeight(1.0))
+                                                      heightDimension: .estimated(50))
 
                 let item = NSCollectionLayoutItem(layoutSize: itemSize)
 
                 let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                                       heightDimension: .absolute(50))
+                                                       heightDimension: .estimated(50))
 
-                let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize,
-                                                             subitem: item,
-                                                             count: 2)
+                let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
+                                                             subitems: [item])
 
                 let section = NSCollectionLayoutSection(group: group)
                 section.interGroupSpacing = 10
@@ -103,5 +100,26 @@ class CollectionViewController: UICollectionViewController {
         }
 
 }
+
+extension UIImageView {
+    func loadImage(from url: URL, completion: (() -> Void)?) {
+        let task = URLSession.shared.dataTask(with: url) { (data, urlResponse, error) in
+            guard error == nil,
+                  let httpResponse = urlResponse as? HTTPURLResponse,
+                  (200...299).contains(httpResponse.statusCode),
+                  let data = data else {
+                return
+            }
+
+            DispatchQueue.main.async {
+                self.image = UIImage(data: data)
+                completion?()
+            }
+        }
+
+        task.resume()
+    }
+}
+
 
 

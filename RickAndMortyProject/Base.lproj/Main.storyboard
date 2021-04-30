@@ -24,36 +24,45 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="B8l-uG-jyu" customClass="CharacterCollectionViewCell" customModule="RickAndMortyProject" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="138" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1iW-2j-s3u">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="138" height="86"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAr-Wd-oA1">
-                                            <rect key="frame" x="139" y="16" width="267" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAr-Wd-oA1">
+                                            <rect key="frame" x="86.5" y="8" width="43.5" height="21"/>
                                             <accessibility key="accessibilityConfiguration" identifier="textLabel"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fJb-Vo-nMX">
-                                            <rect key="frame" x="8" y="8" width="112" height="112"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Specie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooi-Y2-f7E">
+                                            <rect key="frame" x="86" y="39" width="52" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="systemGreenColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fJb-Vo-nMX">
+                                            <rect key="frame" x="8" y="8" width="70" height="70"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="70" id="qRC-P6-VLq"/>
+                                                <constraint firstAttribute="width" constant="70" id="yjE-26-b9r"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooi-Y2-f7E">
-                                            <rect key="frame" x="140" y="68" width="266" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="ooi-Y2-f7E" firstAttribute="leading" secondItem="fJb-Vo-nMX" secondAttribute="trailing" constant="20" id="aBg-T6-1wm"/>
-                                        <constraint firstItem="ooi-Y2-f7E" firstAttribute="top" secondItem="yAr-Wd-oA1" secondAttribute="bottom" constant="31" id="j9M-r9-oij"/>
-                                        <constraint firstItem="yAr-Wd-oA1" firstAttribute="leading" secondItem="fJb-Vo-nMX" secondAttribute="trailing" constant="19" id="sQx-4x-qmv"/>
+                                        <constraint firstItem="fJb-Vo-nMX" firstAttribute="leading" secondItem="1iW-2j-s3u" secondAttribute="leadingMargin" id="32Y-5w-iMz"/>
+                                        <constraint firstItem="yAr-Wd-oA1" firstAttribute="top" secondItem="1iW-2j-s3u" secondAttribute="topMargin" id="4pb-9Z-sNH"/>
+                                        <constraint firstItem="fJb-Vo-nMX" firstAttribute="top" secondItem="1iW-2j-s3u" secondAttribute="topMargin" id="Tso-Ne-VxT"/>
+                                        <constraint firstItem="yAr-Wd-oA1" firstAttribute="leading" secondItem="fJb-Vo-nMX" secondAttribute="trailing" constant="8.5" id="b82-KR-awe"/>
+                                        <constraint firstAttribute="trailing" secondItem="ooi-Y2-f7E" secondAttribute="trailing" id="eeZ-Gh-yQZ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="yAr-Wd-oA1" secondAttribute="trailing" id="p9P-Qc-WaN"/>
+                                        <constraint firstItem="ooi-Y2-f7E" firstAttribute="top" secondItem="yAr-Wd-oA1" secondAttribute="bottom" constant="10" id="seP-uu-O3q"/>
+                                        <constraint firstItem="fJb-Vo-nMX" firstAttribute="bottom" secondItem="1iW-2j-s3u" secondAttribute="bottomMargin" id="tgE-Nh-7nY"/>
+                                        <constraint firstItem="ooi-Y2-f7E" firstAttribute="leading" secondItem="fJb-Vo-nMX" secondAttribute="trailing" constant="8" id="xcU-XQ-SKN"/>
                                     </constraints>
                                 </collectionViewCellContentView>
-                                <size key="customSize" width="414" height="128"/>
                                 <connections>
                                     <outlet property="characterDescription" destination="ooi-Y2-f7E" id="mzi-tm-lb6"/>
                                     <outlet property="characterImage" destination="fJb-Vo-nMX" id="3Ph-de-1Un"/>
@@ -75,6 +84,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
