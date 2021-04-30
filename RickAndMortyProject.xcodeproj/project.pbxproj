@@ -17,6 +17,7 @@
 		08FCF02D25E6A772003CC332 /* PaginationInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FCF02A25E6A772003CC332 /* PaginationInformation.swift */; };
 		08FCF02E25E6A772003CC332 /* PaginatedElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FCF02B25E6A772003CC332 /* PaginatedElements.swift */; };
 		08FCF02F25E6A772003CC332 /* SerieCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FCF02C25E6A772003CC332 /* SerieCharacter.swift */; };
+		08FCF03825EFD785003CC332 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FCF03725EFD785003CC332 /* CharacterCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		08FCF02A25E6A772003CC332 /* PaginationInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationInformation.swift; sourceTree = "<group>"; };
 		08FCF02B25E6A772003CC332 /* PaginatedElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginatedElements.swift; sourceTree = "<group>"; };
 		08FCF02C25E6A772003CC332 /* SerieCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerieCharacter.swift; sourceTree = "<group>"; };
+		08FCF03725EFD785003CC332 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				08FCF01525E6968F003CC332 /* Info.plist */,
 				08FCF01F25E6A3E6003CC332 /* CollectionViewController.swift */,
 				08FCF02225E6A55D003CC332 /* NetworkManager.swift */,
+				08FCF03725EFD785003CC332 /* CharacterCollectionViewCell.swift */,
 			);
 			path = RickAndMortyProject;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08FCF03825EFD785003CC332 /* CharacterCollectionViewCell.swift in Sources */,
 				08FCF02D25E6A772003CC332 /* PaginationInformation.swift in Sources */,
 				08FCF02025E6A3E6003CC332 /* CollectionViewController.swift in Sources */,
 				08FCF02325E6A55D003CC332 /* NetworkManager.swift in Sources */,
