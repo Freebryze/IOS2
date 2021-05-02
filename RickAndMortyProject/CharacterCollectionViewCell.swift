@@ -16,6 +16,6 @@ class CharacterCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var characterDescription: UILabel!
     
-    
+    var myCharacter: SerieCharacter? = nil
     
 }

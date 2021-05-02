@@ -34,6 +34,7 @@ class CollectionViewController: UICollectionViewController {
                 cell.characterName.text = serieCharacter.name
                 cell.characterImage.loadImage(from: serieCharacter.imageURL) {cell.setNeedsLayout()}
                 cell.characterDescription.text = serieCharacter.species
+                cell.myCharacter = serieCharacter
                 return cell
 
             }
@@ -98,11 +99,18 @@ class CollectionViewController: UICollectionViewController {
 
             return snapshot
         }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToDetail" {
+            let destination = segue.destination as! DetailItemViewController
+            destination.myCharacter = (sender as! CharacterCollectionViewCell).myCharacter
+        }
+    }
 
 }
 
 extension UIImageView {
-    func loadImage(from url: URL, completion: (() -> Void)?) {
+    func loadImage(from url: URL, completion: (() -> Void)? = nil) {
         let task = URLSession.shared.dataTask(with: url) { (data, urlResponse, error) in
             guard error == nil,
                   let httpResponse = urlResponse as? HTTPURLResponse,

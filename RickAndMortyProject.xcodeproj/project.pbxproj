@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08CCED5B263BEE60009049BC /* DetailItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CCED5A263BEE60009049BC /* DetailItemViewController.swift */; };
 		08FCF00825E6968D003CC332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FCF00725E6968D003CC332 /* AppDelegate.swift */; };
 		08FCF00A25E6968D003CC332 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FCF00925E6968D003CC332 /* SceneDelegate.swift */; };
 		08FCF00F25E6968D003CC332 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FCF00D25E6968D003CC332 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08CCED5A263BEE60009049BC /* DetailItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItemViewController.swift; sourceTree = "<group>"; };
 		08FCF00425E6968D003CC332 /* RickAndMortyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08FCF00725E6968D003CC332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08FCF00925E6968D003CC332 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				08FCF01F25E6A3E6003CC332 /* CollectionViewController.swift */,
 				08FCF02225E6A55D003CC332 /* NetworkManager.swift */,
 				08FCF03725EFD785003CC332 /* CharacterCollectionViewCell.swift */,
+				08CCED5A263BEE60009049BC /* DetailItemViewController.swift */,
 			);
 			path = RickAndMortyProject;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				08FCF02025E6A3E6003CC332 /* CollectionViewController.swift in Sources */,
 				08FCF02325E6A55D003CC332 /* NetworkManager.swift in Sources */,
 				08FCF02F25E6A772003CC332 /* SerieCharacter.swift in Sources */,
+				08CCED5B263BEE60009049BC /* DetailItemViewController.swift in Sources */,
 				08FCF00825E6968D003CC332 /* AppDelegate.swift in Sources */,
 				08FCF02E25E6A772003CC332 /* PaginatedElements.swift in Sources */,
 				08FCF00A25E6968D003CC332 /* SceneDelegate.swift in Sources */,
